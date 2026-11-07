@@ -48,7 +48,7 @@ function createTile(item) {
   // <img src="images/nome-file.png" alt="Descrizione dell'immagine">
   let html = `
     <span class="tile-inner">
-      <span class="tile-face tile-back" aria-hidden="true">*</span>
+      <span class="tile-face tile-back" aria-hidden="true">❋</span>
       <span class="tile-face tile-front">
         <span class="placeholder">`;
   if (item.type === "image") {
