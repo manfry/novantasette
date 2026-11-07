@@ -148,7 +148,7 @@ h1 span { color: var(--accent); }
 .tile-front .placeholder {
   display: grid;
   place-items: center;
-  gap: 5px;
+  gap: 1px;
   color: #26364d;
 }
 .placeholder .emoji { font-size: clamp(28px, 6vw, 46px); line-height: 1; }
