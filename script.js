@@ -3,10 +3,10 @@
 const groups = [
   { id: 'gr1', type: 'image', items: [{ label: 'Gru', src: 'cme1.png' }, { label: 'Dru', src: 'cme2.png' }] },
   { id: 'gr2', type: 'image', items: [{ label: '♊︎', src: 'gem1.png' }, { label: '♊︎', src: 'gem2.png' }] },
-  { id: 'gr3', type: 'image', items: [{ label: 'James Derrick<br>(Kazuo Tachibana)', src: 'heb1.png' }, { label: 'Jason Derrick<br>(Masao Tachibana)', src: 'heb2.png' }] },
-  { id: 'gr4', type: 'image', items: [{ label: 'Patty Bouvier', src: 'sim1.png' }, { label: 'Selma Bouvier', src: 'sim2.png' }] },
+  { id: 'gr3', type: 'image', items: [{ label: 'James', src: 'heb1.png' }, { label: 'Jason', src: 'heb2.png' }] },
+  { id: 'gr4', type: 'image', items: [{ label: 'Patty', src: 'sim1.png' }, { label: 'Selma', src: 'sim2.png' }] },
   { id: 'gr5', type: 'image', items: [{ label: 'C-17', src: 'drb1.png' }, { label: 'C-18', src: 'drb2.png' }] },
-  { id: 'gr6', type: 'image', items: [{ label: 'Yuichiro Tokito', src: 'dem1.png' }, { label: 'Muichiro Tokito', src: 'dem2.png' }] }
+  { id: 'gr6', type: 'image', items: [{ label: 'Yuichiro', src: 'dem1.png' }, { label: 'Muichiro', src: 'dem2.png' }] }
 ];
 
 const board = document.querySelector('#board');
@@ -48,7 +48,7 @@ function createTile(item) {
   // <img src="images/nome-file.png" alt="Descrizione dell'immagine">
   let html = `
     <span class="tile-inner">
-      <span class="tile-face tile-back" aria-hidden="true">✳</span>
+      <span class="tile-face tile-back" aria-hidden="true">*</span>
       <span class="tile-face tile-front">
         <span class="placeholder">`;
   if (item.type === "image") {
