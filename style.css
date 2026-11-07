@@ -144,7 +144,7 @@ h1 span { color: var(--accent); }
   border: 2px solid var(--accent);
   padding: 8px;
 }
-.tile-front img { width: 72%; height: 72%; object-fit: contain; }
+.tile-front img { width: 85%; height: 85%; object-fit: contain; }
 .tile-front .placeholder {
   display: grid;
   place-items: center;
