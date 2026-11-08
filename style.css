@@ -184,19 +184,23 @@ footer span { color: #b5c1d0; }
 
 @media (max-width: 560px) {
   body { padding: 20px 13px 28px; }
-  .topbar { padding-bottom: 34px; }
+  .topbar { padding: 0px; }
   .top-note { font-size: 8px; letter-spacing: 1px; }
   .game-panel { padding: 15px; border-radius: 18px; }
   .game-info { gap: 12px; margin-bottom: 17px; }
-  .board { gap: 9px; }
+  .board { gap: 9px; grid-template-columns: repeat(3, minmax(0, 1fr));}
   .tile { border-radius: 11px; }
   .restart-btn { padding: 8px 9px; font-size: 10px; }
   .win-message { flex-wrap: wrap; }
   .win-message button { margin-left: 40px; }
+  .intro { margin-bottom: 8px; }
+  .subtitle { margin: 4px auto 0; }
 }
 @media (max-width: 360px) {
-  .board { gap: 7px; }
+  .board { gap: 7px; grid-template-columns: repeat(3, minmax(0, 1fr));}
   .game-panel { padding: 11px; }
   .restart-btn { font-size: 0; }
   .restart-btn span { font-size: 18px; margin: 0; }
+  .intro { margin-bottom: 8px; }
+  .subtitle { margin: 4px auto 0; }
 }

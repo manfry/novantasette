@@ -53,7 +53,7 @@ function createTile(item) {
         <span class="placeholder">`;
   if (item.type === "image") {
     html += `
-          <span class="emoji" aria-hidden="true"><img src="images/${item.src}" alt="${item.label}"></span>
+          <span  aria-hidden="true"><img src="images/${item.src}" alt="${item.label}"></span>
           <small>${item.label}</small>`;
   } else {
     html += `
